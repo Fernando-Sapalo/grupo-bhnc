@@ -13,8 +13,12 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Grupo BHNC",
-  description: "Industrial Engineering Solutions",
+  title: {
+    default: "Grupo BHNC",
+    template: "%s | Grupo BHNC",
+  },
+  description:
+    "Empresa especializada em soluções industriais, engenharia, logística e fornecimento de mão de obra qualificada em Angola.",
 };
 
 export default function RootLayout({
@@ -23,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={`${inter.variable} ${manrope.variable}`}>
         {children}
       </body>
