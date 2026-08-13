@@ -15,6 +15,7 @@ export default function ContactoPage() {
     resolver: zodResolver(contactSchema),
   });
 
+  
   async function onSubmit(data: ContactFormData) {
     // TODO: ligar a um endpoint real (API route, e-mail, ou serviço externo)
     console.log(data);
