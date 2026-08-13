@@ -93,7 +93,7 @@ export default function Hero() {
 
             <span>
               Desde {company.founded} · Presente em{" "}
-              {company.presence.join(", ")}
+              {company.presence.map((location) => location.country).join(", ")}
             </span>
           </div>
         </div>
