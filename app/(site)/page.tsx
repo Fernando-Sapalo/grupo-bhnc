@@ -2,6 +2,9 @@ import Hero from "@/components/sections/hero/Hero";
 import AboutPreview from "@/components/sections/about/AboutPreview";
 import PartnerLogos from "@/components/sections/brands/PartnerLogos";
 import ClientReferences from "@/components/sections/references/ClientReferences";
+import ProductsPreview from "@/components/sections/products/ProductsPreview";
+import StorePreview from "@/components/sections/store/StorePreview";
+
 
 export default function HomePage() {
   return (
@@ -10,6 +13,8 @@ export default function HomePage() {
       <AboutPreview />
       <PartnerLogos />
       <ClientReferences />
+      <ProductsPreview />
+      <StorePreview />
     </>
   );
 }
