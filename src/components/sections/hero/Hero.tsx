@@ -30,7 +30,7 @@ export default function Hero() {
 
     const interval = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % slides.length);
-    }, 6500);
+    }, 4500);
 
     return () => window.clearInterval(interval);
   }, [isPaused, slides.length]);
@@ -149,25 +149,16 @@ export default function Hero() {
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
               <div className="flex items-end justify-between gap-8">
                 <div className="max-w-md">
-                  <div className="mb-2 flex items-center gap-3">
-                    <span className="text-xs font-semibold tracking-[0.18em] text-[#D4AF37]">
-                      {currentSlide.number}
-                    </span>
+                  <div>
+  <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#D4AF37]">
+    {currentSlide.title}
+  </h3>
 
-                    <span className="h-px w-7 bg-[#D4AF37]/60" />
+  <p className="mt-2 text-sm leading-6 text-white/65">
+    {currentSlide.description}
+  </p>
+</div>
 
-                    <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#D4AF37]">
-                      Grupo BHNC
-                    </span>
-                  </div>
-
-                  <h2 className="text-xl font-semibold text-white md:text-2xl">
-                    {currentSlide.title}
-                  </h2>
-
-                  <p className="mt-2 text-sm leading-6 text-white/65">
-                    {currentSlide.description}
-                  </p>
                 </div>
 
                 <Link
