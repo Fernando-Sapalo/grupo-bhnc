@@ -15,7 +15,7 @@ import { services } from "@/constants/services";
 import { sectors } from "@/constants/sectors";
 
 export const metadata = {
-  title: "Sobre nós | Grupo BHNC",
+  title: "Sobre nós",
   description:
     "Conheça o Grupo BHNC, empresa angolana fundada em 2013, com atuação nos setores industrial, energético e de óleo e gás.",
 };

@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const service = servicesDetail.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.title} | Grupo BHNC`,
+    title: service.title,
     description: service.summary,
   };
 }

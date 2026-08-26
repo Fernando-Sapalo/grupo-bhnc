@@ -2,7 +2,7 @@ import { services } from "@/constants/services";
 import { sectors } from "@/constants/sectors";
 
 export const metadata = {
-  title: "Serviços | Grupo BHNC",
+  title: "Serviços",
   description:
     "Man-Power, Offshore, Onshore e Manutenção Industrial — soluções especializadas para os setores de óleo e gás, energia e indústria em Angola.",
 };
