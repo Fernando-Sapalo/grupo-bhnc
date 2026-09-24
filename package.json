@@ -2,12 +2,17 @@
   "name": "grupo-bhnc",
   "version": "0.1.0",
   "private": true,
+  
+  
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "eslint",
+  "deploy:package": "powershell -ExecutionPolicy Bypass -File scripts/deploy-package.ps1"
+
+
+},
   "dependencies": {
     "@base-ui/react": "^1.6.0",
     "@hookform/resolvers": "^5.5.7",
